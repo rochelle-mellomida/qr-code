@@ -37,7 +37,7 @@
         video: document.getElementById("preview"),
       });
       scanner.addListener("scan", function (content) {
-        document.getElementById('result').textContent = content;
+        document.getElementById('result').value = content;
       });
       Instascan.Camera.getCameras()
         .then(function (cameras) {
